@@ -1,13 +1,12 @@
 import pygame
 
-#Initialize PyGame
 pygame.init()
 
-#Creating the screen
-screen = pygame.display.set_mode((800,600))
-running = True
+win = pygame.display.set_mode((800,600))
 
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT():
-            running = False
+pygame.display.set_caption("Ryan's Game")
+x = 50
+y = 50
+width = 40
+height = 60
+velocity = 5
